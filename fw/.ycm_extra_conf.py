@@ -6,7 +6,7 @@ import sys
 curDir = os.path.dirname(os.path.realpath(__file__))
 
 if curDir not in sys.path:
-    sys.path.insert(0, curDir) 
+    sys.path.insert(0, curDir)
 import genFlagsFile
 # These are the compilation flags that will be used in case there's no
 # compilation database set (by default, one is not set).
@@ -18,6 +18,7 @@ flags = [
     '-std=gnu99',
     '-x',
     'c',
+    '-m32',
 ]
 
 SOURCE_EXTENSIONS = ['.c']

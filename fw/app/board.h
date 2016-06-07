@@ -69,7 +69,7 @@
 #define GPIOA_SWCLK                 14U
 #define GPIOA_PIN15                 15U
 
-#define GPIOB_PIN0                  0U
+#define GPIOB_IR_RECIEVER                  0U
 #define GPIOB_PIN1                  1U
 #define GPIOB_PIN2                  2U
 #define GPIOB_PIN3                  3U
@@ -160,6 +160,8 @@
 #define LINE_BUTTON                 PAL_LINE(GPIOA, 0U)
 #define LINE_SWDIO                  PAL_LINE(GPIOA, 13U)
 #define LINE_SWCLK                  PAL_LINE(GPIOA, 14U)
+
+#define LINE_IR_RECEIVER            PAL_LINE(GPIOB, 0U)
 
 #define LINE_LED_BLUE               PAL_LINE(GPIOC, 8U)
 #define LINE_LED_GREEN              PAL_LINE(GPIOC, 9U)
@@ -328,7 +330,7 @@
  * PB14 - SPI2_MISO                 (alternate 0).
  * PB15 - SPI2_MOSI                 (alternate 0).
  */
-#define VAL_GPIOB_MODER             (PIN_MODE_INPUT(GPIOB_PIN0) |           \
+#define VAL_GPIOB_MODER             (PIN_MODE_INPUT(GPIOB_IR_RECIEVER) |           \
                                      PIN_MODE_INPUT(GPIOB_PIN1) |           \
                                      PIN_MODE_INPUT(GPIOB_PIN2) |           \
                                      PIN_MODE_INPUT(GPIOB_PIN3) |           \
@@ -344,7 +346,7 @@
                                      PIN_MODE_INPUT(GPIOB_PIN13) |   \
                                      PIN_MODE_INPUT(GPIOB_PIN14) |  \
                                      PIN_MODE_INPUT(GPIOB_PIN15))
-#define VAL_GPIOB_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOB_PIN0) |       \
+#define VAL_GPIOB_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOB_IR_RECIEVER) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN1) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN2) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN3) |       \
@@ -360,7 +362,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN13) |   \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN14) |  \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN15))
-#define VAL_GPIOB_OSPEEDR           (PIN_OSPEED_VERYLOW(GPIOB_PIN0) |       \
+#define VAL_GPIOB_OSPEEDR           (PIN_OSPEED_VERYLOW(GPIOB_IR_RECIEVER) |       \
                                      PIN_OSPEED_VERYLOW(GPIOB_PIN1) |       \
                                      PIN_OSPEED_HIGH(GPIOB_PIN2) |          \
                                      PIN_OSPEED_HIGH(GPIOB_PIN3) |          \
@@ -376,7 +378,7 @@
                                      PIN_OSPEED_VERYLOW(GPIOB_PIN13) |   \
                                      PIN_OSPEED_VERYLOW(GPIOB_PIN14) |  \
                                      PIN_OSPEED_VERYLOW(GPIOB_PIN15))
-#define VAL_GPIOB_PUPDR             (PIN_PUPDR_PULLUP(GPIOB_PIN0) |         \
+#define VAL_GPIOB_PUPDR             (PIN_PUPDR_PULLUP(GPIOB_IR_RECIEVER) |         \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN1) |         \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN2) |         \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN3) |         \
@@ -392,7 +394,7 @@
                                      PIN_PUPDR_PULLUP(GPIOB_PIN13) |   \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN14) |  \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN15))
-#define VAL_GPIOB_ODR               (PIN_ODR_HIGH(GPIOB_PIN0) |             \
+#define VAL_GPIOB_ODR               (PIN_ODR_HIGH(GPIOB_IR_RECIEVER) |             \
                                      PIN_ODR_HIGH(GPIOB_PIN1) |             \
                                      PIN_ODR_HIGH(GPIOB_PIN2) |             \
                                      PIN_ODR_HIGH(GPIOB_PIN3) |             \
@@ -408,7 +410,7 @@
                                      PIN_ODR_HIGH(GPIOB_PIN13) |         \
                                      PIN_ODR_HIGH(GPIOB_PIN14) |        \
                                      PIN_ODR_HIGH(GPIOB_PIN15))
-#define VAL_GPIOB_AFRL              (PIN_AFIO_AF(GPIOB_PIN0, 0) |           \
+#define VAL_GPIOB_AFRL              (PIN_AFIO_AF(GPIOB_IR_RECIEVER, 0) |           \
                                      PIN_AFIO_AF(GPIOB_PIN1, 0) |           \
                                      PIN_AFIO_AF(GPIOB_PIN2, 0) |           \
                                      PIN_AFIO_AF(GPIOB_PIN3, 0) |           \
