@@ -188,7 +188,7 @@ CPPWARN = -Wall -Wextra -Wundef
 #
 
 # List all user C define here, like -D_DEBUG=1
-UDEFS =
+UDEFS = -DCORTEX_ENABLE_WFI_IDLE=1
 
 # Define ASM defines here
 UADEFS =
